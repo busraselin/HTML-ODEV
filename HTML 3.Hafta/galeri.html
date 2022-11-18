@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+    <body background="resim/arkaplan.jpg">
+
+<style>
+  /* Style The Dropdown Button */
+  .dropbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+  }
+  #tab-gallery {
+        width: 400px;
+        height: 390px;
+        border: 1px solid black;
+    }
+ 
+    #tab-gallery .columns .column {
+        float: left;
+        width: 32%;
+    }
+ 
+    #tab-gallery .columns .column img {
+        opacity: 0.8;
+        cursor: pointer;
+        width: 120px;
+        height: 90px;
+        padding-left: 11px;
+        padding-right: 5px;
+    }
+ 
+    #tab-gallery .columns .column img:hover {
+        opacity: 1;
+    }
+ 
+    #tab-gallery .columns::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+ 
+    #tab-gallery .tab-container {
+        position: relative;
+        margin-bottom: 20px;
+    }
+ 
+    #tab-gallery .tab-container #expanded-img {
+        width: 100%;
+    }
+</style>
+
+<table>
+<div class="dropdown">
+    <button class="dropbtn"> MENULER </button>
+    <div class="dropdown-content">
+      <a href="index.html"> ANASAYFA </a>
+      <a href="galeri.html"> GALERİ </a>
+    </div>
+  </div></table>
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  
+  <center>
+<div id="tab-gallery">
+<div class="tab-container">
+<img id="expanded-img" src="resim/1.jpeg" />
+</div>
+<div class="columns">
+<div class="column">
+<img id="tab-1" src="resim/2.jpeg"/>
+</div>
+<div class="column">
+<img id="tab-2" src="resim/3.jpeg"/>
+</div>
+<div class="column">
+<img id="tab-3" src="resim/4.jpeg"/>
+</div>
+<div class="column">
+<img id="tab-4" src="resim/5.jpeg"/>
+</div>
+<div class="column">
+<img id="tab-4" src="resim/6.jpeg"/>
+ </div>
+    <div class="column">
+        <img id="tab-4" src="resim/7.jpeg"/>
+        </div>
+</div>
+</div> 
+</center>
+
+</html>
